@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Anime Snack</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark pb-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/resources/images/animesnack.png" alt="" width="40" height="40"> Anime Snack
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="tournament.html" class="nav-link">Tournament</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Theories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Rankings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Hall of Fame</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Carousel-->
+    <section class="pt-lg-5 mt-5">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="resources/images/fall-anime.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="resources/images/awards.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="resources/images/lightning-cover.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!--Main Section-->
+    <section class="mt-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-3 d-none d-lg-block">
+                    <div class="card p-3 mb-3">
+                        <h3>Login</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </form>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            Tags
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a href="#">Anime</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Anime Rating</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Anime Reviews</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Attack on Titan</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Awards</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Bleach</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Boruto<a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Charlotte</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Danmachi</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Discussion</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Dragon Ball Z</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Fairy Tail</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Fall</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Food Wars</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Gate</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Hestia</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Hunter x hunter</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Jitsu Wa Watashi Wa</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Kakashi</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Manga</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Monster Musume</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Movies</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Naruto</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Naruto Gaiden</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Naruto Shippuden</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Niskekoi</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">One Piece</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">One Punch Man</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Overlord</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Rakudai Kishi no Cavalry</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Reviews</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Rokka no Yuusha</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Sarada</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Shingeki no Kyojin</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Shokugeki no Souma</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">SPOILERS</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Spring</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">srsStuff</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Summer</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Videos</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Winter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-lg-7 blogs">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h2>Read the latest</h2>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <a href="blogs/robin-kidnapped-theory.html">
+                            <h3 class="card-title p-3">4th Poneglyph & Robin Kidnapped Theory (One Piece Chapter 818 Discussion)!
+                            </h3>
+                        </a>
+                        <a href="blogs/robin-kidnapped-theory.html"><img src="resources/images/blog-images/robin-kidnapped-theory.png" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+
+                            <p class="card-text">Oh Boy! What a chapter we had this week. Possible the first clue to the One Piece we have ever gotten. Four poneglyphs scattered around the new world which will create an x that will mark the spot for the greatest treasure
+                                in anime history to be honest.
+                                <br><br> First I want to mention that the only person currently alive that can read the poneglyphs is Nico Robin, as far as we know. Pekoms from Big Mom’s crew has made it very obvious that the Yonko’s have access to immense
+                                amounts of information, and if they find out about Nico Robin’s abilities, it will make the Straw Hats their main targets. On the other hand we also have people who can hear the voice of all things. Momonoske being theorized
+                                as one might hint to the notion that these people aren’t as rare as we had previously thought...</p>
+                            <a href="blogs/robin-kidnapped-theory.html" class="btn">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <a href="blogs/musaigen-e1.html">
+                            <h3 class="card-title p-3">Musaigen no Phantom World Episode 1 Review – Limbo</h3>
+                        </a>
+                        <a href="blogs/musaigen-e1.html"><img src="resources/images/blog-images/musaigen-e1.png" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+
+                            <p class="card-text">More new animus, and this one looks promising, yet a bit too cliche, hopefully it doesn’t stay that way, not to mention that some of the characters are unique but awesome.
+                            </p>
+                            <a href="blogs/musaigen-e1.html" class="btn">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <a href="blogs/dagashi-e1.html">
+                            <h3 class="card-title p-3">Dagashi Kashi Episode 1 Review – Amagi no Soma</h3>
+                        </a>
+                        <a href="blogs/dagashi-e1.html"><img src="resources/images/blog-images/dagashi-e1.png" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+
+                            <p class="card-text">First thing that came in my mind when I was watching this was the plot similar to Amagi Brilliant Park where they try to go big, and Food Wars with the food or candy.
+                            </p>
+                            <a href="blogs/dagashi-e1.html" class="btn">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <a href="blogs/onepunch-e10.html">
+                            <h3 class="card-title p-3">One Punch Man Episode 10 Review – Boros Has Arrived!</h3>
+                        </a>
+                        <a href="blogs/onepunch-e10.html"><img src="resources/images/blog-images/onepunch-e10.png" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+
+                            <p class="card-text">I haven’t read the manga of OPM, but I can already tell this isn’t going to be your average fight for Saitama! MadHouse, you better make this fight awesome!
+                            </p>
+                            <a href="blogs/onepunch-e10.html" class="btn">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-2 d-none d-lg-block">
+                    <div class="card bg-dark text-light" style="border-radius: 0px;">
+                        <h5 class="card-title px-3 pt-3">Follow us on Facebook</h5>
+                        <div class="alert text-light my-3" role="alert" style="background-color: #5D0E99; text-align: center; border-radius:0px; border: 3px solid white; padding:0.5rem;">
+                            <a href="https://www.facebook.com/animesnackofficial">
+                                <h4 style="color:white;">Anime Snack</h2>
+                            </a>
+                        </div>
+                        <a href="https://www.facebook.com/animesnackofficial"><img src="resources/images/animesnack.png" class="card-img-top" alt="..."></a>
+                    </div>
+                    <div class="card bg-dark text-light" style="border-radius: 0px;">
+                        <div class="alert text-light my-3" role="alert" style="background-color: #FF9100; text-align: center; border-radius:0px; border: 3px solid white; padding:0.5rem;">
+                            <a href="https://www.facebook.com/Team.7.OLDandNEW/">
+                                <h4 style="color:white;">Team 71</h2>
+                            </a>
+                        </div>
+                        <a href="https://www.facebook.com/Team.7.OLDandNEW/"><img src="resources/images/team71.png" class="card-img-top" alt="..."></a>
+                    </div>
+                    <div class="card bg-dark text-light" style="border-radius: 0px;">
+                        <div class="alert text-light my-3" role="alert" style="background-color: #DE1010; text-align: center; border-radius:0px; border: 3px solid white; padding:0.5rem;">
+                            <a href="https://www.facebook.com/AnimeFactsDaily">
+                                <h4 style="color:white;">Anime Facts</h2>
+                            </a>
+                        </div>
+                        <a href="https://www.facebook.com/AnimeFactsDaily"><img src="resources/images/animefacts.jpg" class="card-img-top" alt="..."></a>
+                    </div>
+                    <div class="card bg-dark text-light" style="border-radius: 0px;">
+                        <div class="alert text-light my-3" role="alert" style="background-color: #99009E; text-align: center; border-radius:0px; border: 3px solid white; padding:0.5rem;">
+                            <a href="https://www.facebook.com/NoBetterClanThanUCHIHA">
+                                <h4 style="color:white;">Uchihas</h2>
+                            </a>
+                        </div>
+                        <a href="https://www.facebook.com/NoBetterClanThanUCHIHA"><img src="resources/images/uchiha.jpg" class="card-img-top" alt="..."></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="mt-5 p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p>
+                Copyright &copy; 2021 Anime Snack
+            </p>
+            <a href="# " class="position-absolute bottom-0 end-0 p-5 ">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Login</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
